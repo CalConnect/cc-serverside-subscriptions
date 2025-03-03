@@ -1,0 +1,23 @@
+[[caldav-considerations]]
+== CalDAV service Considerations
+
+As mentioned above, this feature is particularly useful for CalDAV servers and clients. There
+are some specific considerations.
+
+=== Deleted events
+
+If subscription-deletions-suppressed is specified then the server SHOULD retain all events.
+However, the server MAY choose to remove old events once they become older than the
+CALDAV:min-date-time property as specified in <<RFC4791,section=5.2.6>>.
+
+=== CalDAV restrictions
+
+A server SHOULD apply all appropriate restrictions on events obtained from a subscription. In
+particular the CALDAV:min-date-time and CALDAV:max-date-time properties as specified in
+<<RFC4791,section=5.2.6>> and <<RFC4791,section=5.2.7>> SHOULD be applied.
+
+Additionally the CALDAV:max-resource-size property restricts the size of events and the CALDAV:max-instances property the number of instances.
+
+=== Invitations in Subscriptions
+
+Any reason not to allow them?

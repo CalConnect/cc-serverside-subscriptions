@@ -1,0 +1,25 @@
+[[response-delays]]
+== Response Delays
+
+Implementations of this feature may have an outboard or background process handling the actual
+synchronization of the data. The target may be hosted on a slow service or the data may be very
+large.
+
+All these factors may lead to a significant delay in having data ready for delivery to the
+client.
+
+The following approaches are more or less appropriate for handling requests:
+
+Return with available data:: This is the normal behavior. The subscription looks like a regular
+collection so the server can respond to the normal requests with whatever data is available.
+
+Wait for completion:: If the synchronization process is active the server may just choose to
+wait. This risks a request timeout if the data synchronization takes a significant amount of
+time.
+
+Return 102 status(es):: The server may choose to wait but periodically send a 102 response to
+keep the connection alive.
+
+Return 202 status:: This is probably the best response. There is no need to indicate where the
+client should go to retrieve the data. All it needs to do is retry the operation after an
+appropriate delay.

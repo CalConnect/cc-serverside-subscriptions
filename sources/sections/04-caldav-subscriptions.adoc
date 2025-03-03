@@ -1,0 +1,47 @@
+[[caldav-subscriptions]]
+== CalDAV Subscriptions
+
+=== Request
+
+A client will subscribe to a URL by performing a MKCOL request with resource type elements of
+at least DAV:collection and DAV:subscription. For a calendar subscription there will also be a
+caldav calendar element.
+
+This is an example of the MKCOL request and response from a server that supports extended
+MKCOL.
+
+[source%unnumbered]
+----
+>> Request <<
+
+POST /caldav/user/mike/calendars/parrots HTTP/1.1
+Host: example.com
+Content-Type: text/calendar; component=VEVENT; method=REQUEST
+Content-Length: xxxx
+
+<?xml version="1.0" encoding="utf-8" ?>
+<D:mkcol xmlns:D="DAV:"
+         xmlns:C="urn:ietf:params:xml:ns:caldav">
+  <D:set>
+    <D:prop>
+      <D:resourcetype>
+        <D:collection/>
+        <C:calendar/>
+        <D:subscription/>
+      </D:resourcetype>
+      <D:displayname>Parrot Events</D:displayname>
+      <D:subscription-href
+          >http://example.org/parrot-events.ics<
+          /D:subscription-href>
+      <D:subscription-deletions-suppressed
+          >true</D:subscription-deletions-suppressed>
+      <D:subscription-suggested-refresh-interval
+          >PT1H</D:subscription-suggested-refresh-interval>
+    </D:prop>
+  </D:set>
+</D:mkcol>
+
+>> Response <<
+
+HTTP/1.1 200 OK
+----

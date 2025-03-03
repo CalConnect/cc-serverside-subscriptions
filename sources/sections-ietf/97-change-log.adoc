@@ -1,0 +1,19 @@
+[appendix]
+== metanorma-extension
+
+=== document history
+
+[source,yaml]
+----
+- date:
+  - type: created
+    value: 2018-06-26
+  edition: 0
+  contributor:
+  - person:
+      name:
+        abbreviation: MD
+        completename: Michael Douglass
+  amend:
+    - description: First pass
+----
