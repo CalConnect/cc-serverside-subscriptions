@@ -1,0 +1,9 @@
+[[scope]]
+== Scope
+
+//This document specifies a mechanism whereby subscriptions to external resources can be handled
+//by the server. It defines new properties for the MKCOL request to support server-side
+//subscriptions.
+
+//The document is applicable to any resource which allows subscriptions, with a primary focus on
+//calendar data.

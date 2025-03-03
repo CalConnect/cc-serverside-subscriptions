@@ -1,0 +1,46 @@
+= Serverside Subscriptions
+:docnumber: 51023
+:copyright-year: 2022
+:language: en
+:doctype: standard
+:edition: 1
+:status: working-draft
+:revdate: 2022-05-18
+:published-date: 2022-05-18
+:technical-committee: CALENDAR
+:fullname: Michael Douglass
+:surname: Douglass
+:givenname: Michael
+:affiliation: Bedework
+:mn-document-class: cc
+:mn-output-extensions: xml,html,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+include::sections/00-abstract.adoc[]
+
+include::sections/01-intro.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-normative-references.adoc[]
+
+include::sections/03-terms.adoc[]
+
+include::sections/04-caldav-subscriptions.adoc[]
+
+include::sections/05-dav-properties.adoc[]
+
+include::sections/06-refreshing.adoc[]
+
+include::sections/07-response-delays.adoc[]
+
+include::sections/08-caldav-considerations.adoc[]
+
+include::sections/09-security.adoc[]
+
+include::sections/10-privacy.adoc[]
+
+include::sections/11-iana.adoc[]
+
+include::sections/99-acknowledgements.adoc[]

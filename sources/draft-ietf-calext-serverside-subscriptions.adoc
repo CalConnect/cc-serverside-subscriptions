@@ -1,0 +1,50 @@
+= Serverside Subscriptions
+:doctype: internet-draft
+:name: draft-ietf-calext-serverside-subscriptions-03
+:status: standard
+:ipr: trust200902
+:area: Applications
+:intended-series: standard
+:workgroup: Calendaring Extensions
+:published-date: 2022-05-18
+:updates: IETF RFC 4791
+:fullname: Michael Douglass
+:lastname: Douglass
+:forename_initials: M.
+:affiliation: Bedework
+:address: 226 3rd Street + \
+Troy, NY 12180 + \
+United States of America
+:email: mdouglass@bedework.com
+:contributor-uri: http://bedework.com
+:mn-document-class: ietf
+:mn-output-extensions: xml,rfc,txt,html,rxl
+:local-cache-only:
+:data-uri-image:
+:keywords: icalendar, properties
+
+include::sections-ietf/00-abstract.adoc[]
+
+include::sections/01-intro.adoc[]
+
+include::sections/04-caldav-subscriptions.adoc[]
+
+include::sections/05-dav-properties.adoc[]
+
+include::sections/06-refreshing.adoc[]
+
+include::sections/07-response-delays.adoc[]
+
+include::sections/08-caldav-considerations.adoc[]
+
+include::sections/09-security.adoc[]
+
+include::sections/10-privacy.adoc[]
+
+include::sections/11-iana.adoc[]
+
+include::sections/99-acknowledgements.adoc[]
+
+include::sections-ietf/97-change-log.adoc[]
+
+include::sections-ietf/98-references.adoc[]

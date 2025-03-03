@@ -1,0 +1,21 @@
+[[introduction]]
+== Introduction
+
+The motivation for this specification was initially to handle external subscriptions to calendar
+data. However, any resource which allows subscriptions might make use of this specification.
+
+Currently subscriptions to calendar feeds are handled by calendar clients. There are a number of
+disadvantages to this approach: users have to subscribe from multiple devices and the
+subscription cannot affect scheduling handled by the server.
+
+This specification defines a mechanism whereby the server will subscribe to the feed and make it
+visible in the user's home.
+
+The advantages are popular feeds can be cached by the server and the user only has to make a
+single subscription.
+
+=== Conventions Used in This Document
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT",
+"RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted
+as described in <<RFC2119>>.

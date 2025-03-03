@@ -1,22 +1,21 @@
-= CalConnect Standard: (TITLE)
+= CalConnect Standard: Serverside Subscriptions
 
-This work item belongs to CalConnect (TCs).
+This work item belongs to CalConnect TC CALENDAR.
 
 image:https://github.com/CalConnect/cc-serverside-subscriptions/workflows/generate/badge.svg["Build Status", link="https://github.com/CalConnect/cc-serverside-subscriptions/actions?workflow=generate"]
 
 This document is available in its rendered forms here:
 
-* https://calconnect.github.io/cc-serverside-subscriptions/[CalConnect: Calendaring and scheduling -- Vocabulary (HTML)]
+* https://calconnect.github.io/cc-serverside-subscriptions/[CalConnect: Serverside Subscriptions (HTML)]
 
 == General
 
-This document specifies the (TITLE).
+This document specifies the Serverside Subscriptions.
 
 The document is published as the following:
 
-* CalConnect CC (DOCNUMBER)
-* ISO (DOCNUMBER)
-* IETF draft-cc-serverside-subscriptions
+* CalConnect CC 51023
+* IETF draft-ietf-calext-serverside-subscriptions
 
 
 == Fetching the document
