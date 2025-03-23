@@ -1,6 +1,6 @@
 [[security]]
 == Security Considerations
 
-Servers implementing this feature need to be aware of the risks entailed in using the URIs
-provided as values to subscription-href. See <<RFC3986>> for a discussion of the security
-considerations relating to URIs.
+Servers implementing this feature need to be aware of the risks entailed in
+using the URIs provided as values to subscription-href. See <<RFC3986>> for a
+discussion of the security considerations relating to URIs.

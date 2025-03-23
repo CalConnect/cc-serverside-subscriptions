@@ -1,15 +1,16 @@
 [[refreshing]]
 == Refreshing and Reenabling the subscription
 
-When creating the subscription the client may indicate to the server a desired refresh interval
-using the subscription-suggested-refresh-interval property.
+When creating the subscription the client may indicate to the server a desired
+refresh interval using the subscription-suggested-refresh-interval property.
 
-The client may indicate to the server that a refresh of the data is desired by using the
-PROPPATCH method to set the subscription-next-refresh-interval to 0, e.g. "PT0S".
+The client may indicate to the server that a refresh of the data is desired by
+using the PROPPATCH method to set the subscription-next-refresh-interval to 0,
+e.g. "PT0S".
 
-A server MAY choose to always ignore the attempted refresh or to ignore the patch if it appears
-too often.
+A server MAY choose to always ignore the attempted refresh or to ignore the
+patch if it appears too often.
 
-If the server decides to initiate a refresh it MAY choose to respond with a 102 HTTP status
-indicating that it is still waiting for the data or a 202 HTTP status to indicate the request
-was accepted.
+If the server decides to initiate a refresh it MAY choose to respond with a 102
+HTTP status indicating that it is still waiting for the data or a 202 HTTP
+status to indicate the request was accepted.

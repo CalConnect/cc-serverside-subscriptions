@@ -3,12 +3,12 @@
 
 === Request
 
-A client will subscribe to a URL by performing a MKCOL request with resource type elements of
-at least DAV:collection and DAV:subscription. For a calendar subscription there will also be a
-caldav calendar element.
+A client will subscribe to a URL by performing a MKCOL request with resource
+type elements of at least DAV:collection and DAV:subscription. For a calendar
+subscription there will also be a caldav calendar element.
 
-This is an example of the MKCOL request and response from a server that supports extended
-MKCOL.
+This is an example of the MKCOL request and response from a server that supports
+extended MKCOL.
 
 [source%unnumbered]
 ----

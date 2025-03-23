@@ -12,4 +12,4 @@
 * [[[RFC5546,IETF RFC 5546]]]
 * [[[RFC5988,IETF RFC 5988]]]
 * [[[RFC7240,IETF RFC 7240]]]
-* [[[W3C.REC-xml-20060816,W3C.REC-xml-20060816]]], Maler, E., Yergeau, F., Paoli, J., Sperberg-McQueen, M., and T. Bray, "Extensible Markup Language (XML) 1.0 (Fourth Edition)", World Wide Web Consortium Recommendation REC-xml-20060816, August 2006.
+* [[[W3C.REC-xml-20060816,W3C REC-xml-20060816]]], Maler, E., Yergeau, F., Paoli, J., Sperberg-McQueen, M., and T. Bray, "Extensible Markup Language (XML) 1.0 (Fourth Edition)", World Wide Web Consortium Recommendation REC-xml-20060816, August 2006.

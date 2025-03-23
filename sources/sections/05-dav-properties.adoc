@@ -4,14 +4,19 @@
 === DAV:subscription
 
 Name:: subscription
+
 Namespace:: DAV
-Purpose:: To indicate that the resource is a subscription to an external resource which is
-managed by the server.
+
+Purpose:: To indicate that the resource is a subscription to an external
+resource which is managed by the server.
+
 Conformance:: When this is specified the request MUST also contain at least a
 DAV:subscription-href element as defined in this specification.
-Description:: The DAV:specification resource type element is used to indicate a collection
-that is a subscription. A subscription MUST report the DAV:subscription XML element in the
-value of the DAV: resourcetype property.
+
+Description:: The DAV:specification resource type element is used to indicate a
+collection that is a subscription. A subscription MUST report the
+DAV:subscription XML element in the value of the DAV: resourcetype property.
+
 Definition::
 +
 [source%unnumbered]
@@ -22,10 +27,14 @@ Definition::
 === DAV:subscription-href
 
 Name:: subscription-href
+
 Namespace:: DAV
+
 Purpose:: Provides the url for the external subscription.
-Conformance:: This property MUST be defined on any collection which has a resource-type
-containing a DAV:subscription element.
+
+Conformance:: This property MUST be defined on any collection which has a
+resource-type containing a DAV:subscription element.
+
 Definition::
 +
 [source%unnumbered]
@@ -33,6 +42,7 @@ Definition::
 <!ELEMENT vpoll-max-items (#PCDATA)>
 PCDATA value: a url
 ----
+
 Example::
 +
 [source%unnumbered]
@@ -44,17 +54,24 @@ Example::
 === DAV:subscription-deletions-suppressed
 
 Name:: subscription-deletions-suppressed
+
 Namespace:: DAV
-Purpose:: To indicate that resources that no longer appear in the feed should be retained by
-the server.
+
+Purpose:: To indicate that resources that no longer appear in the feed should be
+retained by the server.
+
 Conformance:: This property MAY be defined on any subscription.
-Description:: Many feeds provide only the current active set of resources. For example, a
-calendar feed may only contain events from the current date onwards - while many subscribers
-would like to retain a copy of all events received over time.
+
+Description:: Many feeds provide only the current active set of resources. For
+example, a calendar feed may only contain events from the current date onwards -
+while many subscribers would like to retain a copy of all events received over
+time.
 +
-This property indicates that the server SHOULD retain resources that disappear from the feed.
-Services MAY define some mechanism to indicate that a particular resource SHOULD be removed.
-For example this specification suggests setting a status of DELETED on a calendar event.
+This property indicates that the server SHOULD retain resources that disappear
+from the feed. Services MAY define some mechanism to indicate that a particular
+resource SHOULD be removed. For example this specification suggests setting a
+status of DELETED on a calendar event.
+
 Definition::
 +
 [source%unnumbered]
@@ -65,16 +82,21 @@ Definition::
 === DAV:subscription-disabled
 
 Name:: subscription-disabled
+
 Namespace:: DAV
+
 Purpose:: To indicate that subscription has been disabled.
+
 Conformance:: This property MUST be reported for any disabled subscription.
-Description:: A server MAY choose to disable a subscription if there is an excessive number of
-errors when attempting to synchronize with the target This property indicates to the client
-that the subscription has been disabled.
+
+Description:: A server MAY choose to disable a subscription if there is an
+excessive number of errors when attempting to synchronize with the target This
+property indicates to the client that the subscription has been disabled.
 +
-There is no explicit action that can be taken to reenable a subscription. However, on
-subsequent requests a client may indicate a refresh is desired which MAY have the effect of
-reenabling the subscription.
+There is no explicit action that can be taken to reenable a subscription.
+However, on subsequent requests a client may indicate a refresh is desired which
+MAY have the effect of reenabling the subscription.
+
 Definition::
 +
 [source%unnumbered]
@@ -85,11 +107,16 @@ Definition::
 === DAV:subscription-next-refresh-interval
 
 Name:: subscription-next-refresh-interval
+
 Namespace:: DAV
+
 Purpose:: To indicate the time interval till the next refresh of a subscription.
+
 Conformance:: This property MUST be reported for any active subscription.
-Description:: This provides a time period to the next refresh. It uses the period format
-defined in <<RFC3339>>.
+
+Description:: This provides a time period to the next refresh. It uses the
+period format defined in <<RFC3339>>.
+
 Definition::
 +
 [source%unnumbered]
@@ -97,6 +124,7 @@ Definition::
 <!ELEMENT subscription-next-refresh-interval (#PCDATA)>
 PCDATA value: a duration value
 ----
+
 Example::
 +
 [source%unnumbered]
@@ -108,11 +136,17 @@ Example::
 === DAV:subscription-suggested-refresh-interval
 
 Name:: subscription-suggested-refresh-interval
+
 Namespace:: DAV
-Purpose:: To indicate the desired time interval between refreshes of a subscription.
+
+Purpose:: To indicate the desired time interval between refreshes of a
+subscription.
+
 Conformance:: This property MUST be reported for any active subscription.
-Description:: This provides a suggested time period between refresh. It uses the period format
-defined in RFC 3339.
+
+Description:: This provides a suggested time period between refresh. It uses the
+period format defined in RFC 3339.
+
 Definition::
 +
 [source%unnumbered]
@@ -120,6 +154,7 @@ Definition::
 <!ELEMENT subscription-suggested-refresh-interval (#PCDATA)>
 PCDATA value: a duration value
 ----
+
 Example::
 +
 [source%unnumbered]
