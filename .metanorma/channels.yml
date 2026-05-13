@@ -1,0 +1,5 @@
+# .metanorma/channels.yml — cc-serverside-subscriptions
+
+channels:
+  - name: public/standards
+    description: "CalConnect documents from cc-serverside-subscriptions"

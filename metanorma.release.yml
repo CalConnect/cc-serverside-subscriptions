@@ -1,3 +1,5 @@
+# metanorma.release.yml — cc-serverside-subscriptions
+
 documents:
-  - source: sources/cc-51023.adoc
-  - source: sources/draft-ietf-calext-serverside-subscriptions.adoc
+  - pattern: "cc-*"
+    channels: [public/standards]
